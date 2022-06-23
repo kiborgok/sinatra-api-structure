@@ -1,2 +1,2 @@
-web: bundle exec rackup config.ru
+web: bundle exec rackup -p ENV['PORT'] config.ru
 release: bundle exec rake db:migrate
